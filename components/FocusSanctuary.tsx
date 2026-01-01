@@ -79,10 +79,15 @@ export function FocusSanctuary() {
         html5: true,
       });
       
-      soundRef.current.play().catch(() => {
+      try {
+        const soundId = soundRef.current.play();
+        if (soundId === undefined || soundId === null) {
+          console.log('Sound file not found, skipping ambient sound');
+        }
+      } catch (error) {
         // Sound file might not exist, that's okay
         console.log('Sound file not found, skipping ambient sound');
-      });
+      }
     } else {
       if (soundRef.current) {
         soundRef.current.stop();
