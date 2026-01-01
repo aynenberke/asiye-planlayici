@@ -1,0 +1,25 @@
+{
+  "name": "Asiye'nin Planı",
+  "short_name": "Asiye'nin Planı",
+  "description": "Premium YKS çalışma uygulaması - Deep Work mode",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ec4899",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
