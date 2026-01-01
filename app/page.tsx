@@ -56,13 +56,13 @@ export default function HomePage() {
       <FocusSanctuary />
 
       {/* Bottom Navigation */}
-      <nav className="fixed bottom-0 left-0 right-0 glass-dark border-t border-white/10 safe-bottom z-40">
+      <nav className="fixed bottom-0 left-0 right-0 glass border-t border-pink-200/50 safe-bottom z-40">
         <div className="flex items-center justify-around h-16 px-4">
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setCurrentView('home')}
             className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${
-              currentView === 'home' ? 'text-white' : 'text-gray-400'
+              currentView === 'home' ? 'text-pink-600' : 'text-gray-400'
             }`}
           >
             <Home size={24} className={currentView === 'home' ? 'stroke-[2.5]' : ''} />
@@ -73,7 +73,7 @@ export default function HomePage() {
             whileTap={{ scale: 0.9 }}
             onClick={() => setCurrentView('settings')}
             className={`flex flex-col items-center justify-center flex-1 h-full transition-colors ${
-              currentView === 'settings' ? 'text-white' : 'text-gray-400'
+              currentView === 'settings' ? 'text-pink-600' : 'text-gray-400'
             }`}
           >
             <SettingsIcon size={24} className={currentView === 'settings' ? 'stroke-[2.5]' : ''} />

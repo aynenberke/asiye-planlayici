@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 import { Clock, Sparkles } from 'lucide-react';
 
 export function SmartConcierge() {
-  const today = new Date();
-  const hour = today.getHours();
+  const todayDate = new Date();
+  const hour = todayDate.getHours();
   const { todayShift, tasks, generateTasks, setTodayShift } = useStudyStore();
   
-  const today = new Date().toISOString().split('T')[0];
+  const today = todayDate.toISOString().split('T')[0];
   const todayTasks = tasks.filter((t) => 
     t.scheduledFor === today && t.status !== 'completed'
   );

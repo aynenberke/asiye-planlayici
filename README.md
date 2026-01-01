@@ -2,6 +2,23 @@
 
 **Premium iOS PWA for Deep Work** - A specialized, minimalist study application designed for focused learning sessions.
 
+## 🚀 Hızlı Başlangıç
+
+### Yerel Geliştirme
+```bash
+npm install
+npm run dev
+```
+
+### GitHub'a Yükleme
+Detaylı rehber için `GITHUB_SETUP.md` dosyasına bak.
+
+### Vercel'e Deploy
+1. GitHub'a push et
+2. [vercel.com](https://vercel.com) adresine git
+3. GitHub repository'ni bağla
+4. Deploy et!
+
 ## Core Philosophy
 
 **Minimalism over complexity. Action over analysis.**
