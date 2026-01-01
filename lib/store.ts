@@ -43,7 +43,7 @@ interface StudyState {
   setShiftForDate: (date: string, shift: ShiftType) => void;
   generateTasks: () => void;
   addTask: (task: Omit<Task, 'id' | 'status'>) => void;
-  startFocus: (taskId: string) => void;
+  startFocus: (taskId: string | null) => void;
   completeTask: (taskId: string, difficulty: 'hard' | 'easy') => void;
   moveToBacklog: (taskId: string) => void;
   exportData: () => string;
